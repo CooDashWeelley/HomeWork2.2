@@ -1,7 +1,6 @@
-import java.util.Objects;
 
 public class Gryffindor extends Hogwarts {
-    private String faculty = "Gryffindor";
+    private final String faculty = "Gryffindor";
     private int nobility;
     private int honor;
     private int courage;
@@ -54,7 +53,7 @@ public class Gryffindor extends Hogwarts {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Gryffindor that = (Gryffindor) o;
-        return getNobility() == that.getNobility() && getHonor() == that.getHonor() && getCourage() == that.getCourage() && Objects.equals(faculty, that.faculty);
+        return getNobility() == that.getNobility() && getHonor() == that.getHonor() && getCourage() == that.getCourage();
     }
 
     public void equalsInFaculty(Gryffindor a) {

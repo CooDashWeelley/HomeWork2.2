@@ -1,7 +1,6 @@
-import java.util.Objects;
 
 public class Ravenclaw extends Hogwarts {
-    private String faculty = "Ravenclaw";
+    private final String faculty = "Ravenclaw";
     public int smart;
     public int wisdom;
     public int wit;
@@ -65,7 +64,7 @@ public class Ravenclaw extends Hogwarts {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Ravenclaw ravenclaw = (Ravenclaw) o;
-        return getSmart() == ravenclaw.getSmart() && getWisdom() == ravenclaw.getWisdom() && getWit() == ravenclaw.getWit() && getCreation() == ravenclaw.getCreation() && Objects.equals(faculty, ravenclaw.faculty);
+        return getSmart() == ravenclaw.getSmart() && getWisdom() == ravenclaw.getWisdom() && getWit() == ravenclaw.getWit() && getCreation() == ravenclaw.getCreation();
     }
 
     public void equalsInFaculty(Ravenclaw a) {

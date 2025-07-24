@@ -1,7 +1,6 @@
-import java.util.Objects;
 
 public class Hufflepuff extends Hogwarts {
-    private String faculty = "Hufflepuff";
+    private final String faculty = "Hufflepuff";
     public int diligence;
     public int loyalty;
     public int honesty;
@@ -54,7 +53,7 @@ public class Hufflepuff extends Hogwarts {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Hufflepuff that = (Hufflepuff) o;
-        return getDiligence() == that.getDiligence() && getLoyalty() == that.getLoyalty() && getHonesty() == that.getHonesty() && Objects.equals(faculty, that.faculty);
+        return getDiligence() == that.getDiligence() && getLoyalty() == that.getLoyalty() && getHonesty() == that.getHonesty();
     }
 
     public void equalsInFaculty(Hufflepuff a) {

@@ -1,7 +1,6 @@
-import java.util.Objects;
 
 public class Slytherin extends Hogwarts {
-    private String faculty = "Slytherin";
+    private final String faculty = "Slytherin";
     public int cunning;
     public int determination;
     public int ambition;
@@ -76,7 +75,7 @@ public class Slytherin extends Hogwarts {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Slytherin slytherin = (Slytherin) o;
-        return getCunning() == slytherin.getCunning() && getDetermination() == slytherin.getDetermination() && getAmbition() == slytherin.getAmbition() && getResourcefulness() == slytherin.getResourcefulness() && getThirstForPower() == slytherin.getThirstForPower() && Objects.equals(faculty, slytherin.faculty);
+        return getCunning() == slytherin.getCunning() && getDetermination() == slytherin.getDetermination() && getAmbition() == slytherin.getAmbition() && getResourcefulness() == slytherin.getResourcefulness() && getThirstForPower() == slytherin.getThirstForPower();
     }
 
     public void equalsInFaculty(Slytherin a) {
