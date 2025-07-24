@@ -4,7 +4,6 @@ public class Hufflepuff extends Hogwarts {
     public int diligence;
     public int loyalty;
     public int honesty;
-    PrintService printService = new PrintService();
 
     public Hufflepuff(String name, int magician, int transgress, int diligence, int loyalty, int honesty) {
         super(name, magician, transgress);

@@ -5,7 +5,6 @@ public class Ravenclaw extends Hogwarts {
     public int wisdom;
     public int wit;
     public int creation;
-    PrintService printService = new PrintService();
 
     public Ravenclaw(String name, int magician, int transgress, int smart, int wisdom, int wit, int creation) {
         super(name, magician, transgress);

@@ -6,7 +6,6 @@ public class Slytherin extends Hogwarts {
     public int ambition;
     public int resourcefulness;
     public int thirstForPower;
-    PrintService printService = new PrintService();
 
     public Slytherin(String name, int magician, int transgress, int cunning, int determination, int ambition, int resourcefulness, int thirstForPower) {
         super(name, magician, transgress);

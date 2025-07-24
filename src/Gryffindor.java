@@ -4,7 +4,6 @@ public class Gryffindor extends Hogwarts {
     private int nobility;
     private int honor;
     private int courage;
-    PrintService printService = new PrintService();
 
     public Gryffindor(String name, int magician, int transgress, int nobility, int honor, int courage) {
         super(name, magician, transgress);

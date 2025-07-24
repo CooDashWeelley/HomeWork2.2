@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Hogwarts {
-
+    PrintService printService = new PrintService();
     public String name;
     public int magician;
     public int transgress;
@@ -53,21 +53,8 @@ public class Hogwarts {
         return Objects.hashCode(getName());
     }
 
-
     public void equalsInHogwarts(Hogwarts a) {
-        if (this.getMagician() > a.getMagician()) {
-            System.out.println(this.getName() + " better than " + a.getName() + " in magician");
-        } else if (this.getMagician() < a.getMagician()) {
-            System.out.println(a.getName() + " better than " + this.getName() + " in magician");
-        } else {
-            System.out.println(this.getName() + " equals " + a.getName() + " in magician");
-        }
-        if (this.getTransgress() > a.getTransgress()) {
-            System.out.println(this.getName() + " better than " + a.getName() + " in transgression");
-        } else if (this.getTransgress() < a.getTransgress()) {
-            System.out.println(a.getName() + " better than " + this.getName() + " in transgression");
-        } else {
-            System.out.println(this.getName() + " equals " + a.getName() + " in transgression");
-        }
+        printService.printBetterInMagician(this, a);
+        printService.printBetterInTransgression(this, a);
     }
 }
